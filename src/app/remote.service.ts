@@ -6,9 +6,12 @@ import { StorageService } from './storage.service';
   providedIn: 'root',
 })
 export class RemoteService {
-  constructor(private storage: StorageService) {}
+  constructor() {}
 
-  state = this.storage.get('remote')
+  state = {
+    power: false,
+    pause: true,
+  };
 
   updater = new Subject<typeof this.state>();
 
@@ -28,9 +31,6 @@ export class RemoteService {
   }
 
   private update() {
-    this.storage.set('remote', {
-      ...this.state,
-    });
     this.updater.next(this.state);
   }
 }
