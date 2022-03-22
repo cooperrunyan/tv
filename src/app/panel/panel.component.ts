@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { MediaControllerService } from '../media-controller.service';
+import { RemoteService } from '../remote.service';
 
 @Component({
   selector: 'app-panel',
@@ -7,13 +8,13 @@ import { MediaControllerService } from '../media-controller.service';
   styleUrls: ['./panel.component.scss'],
 })
 export class PanelComponent {
-  constructor(private mediaController: MediaControllerService) {}
+  constructor(private mediaController: MediaControllerService, private remote: RemoteService) {}
 
   next() {
-    this.mediaController.next();
+    if (this.remote.state.power) this.mediaController.next();
   }
 
   last() {
-    this.mediaController.last();
+    if (this.remote.state.power) this.mediaController.last();
   }
 }

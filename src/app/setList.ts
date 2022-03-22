@@ -1,15 +1,15 @@
 export default [
   {
+    name: 'Good Riddance',
+    link: '../assets/music/good riddance.mp4',
+  },
+  {
     name: 'Holiday',
     link: '../assets/music/holiday.mp4',
   },
   {
     name: 'Drain You',
     link: '../assets/music/drain you.mp4',
-  },
-  {
-    name: 'Good Riddance',
-    link: '../assets/music/good riddance.mp4',
   },
   {
     name: 'American Idiot',

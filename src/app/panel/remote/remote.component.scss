@@ -1,5 +1,5 @@
 .remote {
-  height: 40%;
+  height: 10%;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -7,11 +7,12 @@
   .content {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 8px;
   }
 }
 
-.power {
+button {
   background-color: black;
   border: none;
   border-radius: 100%;
@@ -30,4 +31,9 @@
     border-bottom: 2px solid #dadada;
     border-right: 2px solid #dadada;
   }
+}
+
+.power {
+  background-color: rgb(207, 0, 0);
+  color: black;
 }

@@ -1,4 +1,4 @@
-<div class="screen">
+<div [class]="'screen ' + (!current.power ? 'off' : '')">
   <div class="scan">
     <app-scan-lines></app-scan-lines>
   </div>
