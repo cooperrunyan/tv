@@ -43,24 +43,32 @@ export default [
     name: 'Lounge Act',
     link: '../assets/music/lounge act.mp4',
   },
+  {
+    name: 'In Bloom',
+    link: '../assets/music/in bloom.mp4',
+  },
+  {
+    name: 'When I Come Around',
+    link: '../assets/music/when i come around.mp4',
+  },
+  {
+    name: 'Longview',
+    link: '../assets/music/longview.mp4',
+  },
+  {
+    name: 'Geek Stink Breath',
+    link: '../assets/music/geek stink breath.mp4',
+  },
+  {
+    name: 'Brain Stew',
+    link: '../assets/music/brain stew.mp4',
+  },
 ];
 
 /*
-in bloom
-heart shaped box
-when i come around
-longview
-basket case
-geek stink breath
-babs uvula who
-brain stew
-jesus of suburbia
-hitchin a ride
-all the time
 redundant
 platypus
 take back
-king for a day
 2000 light years away
 christie road
 private ale
