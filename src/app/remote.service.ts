@@ -1,16 +1,14 @@
 import { Injectable } from '@angular/core';
 import { Subject } from 'rxjs';
+import { StorageService } from './storage.service';
 
 @Injectable({
   providedIn: 'root',
 })
 export class RemoteService {
-  constructor() {}
+  constructor(private storage: StorageService) {}
 
-  state = {
-    power: true,
-    pause: false,
-  };
+  state = this.storage.get('remote')
 
   updater = new Subject<typeof this.state>();
 
@@ -30,6 +28,9 @@ export class RemoteService {
   }
 
   private update() {
+    this.storage.set('remote', {
+      ...this.state,
+    });
     this.updater.next(this.state);
   }
 }
