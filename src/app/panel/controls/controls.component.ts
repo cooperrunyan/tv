@@ -3,11 +3,11 @@ import { MediaService } from 'src/app/media.service';
 import { RemoteService } from 'src/app/remote.service';
 
 @Component({
-  selector: 'app-remote',
-  templateUrl: './remote.component.html',
-  styleUrls: ['./remote.component.scss'],
+  selector: 'app-controls',
+  templateUrl: './controls.component.html',
+  styleUrls: ['./controls.component.scss'],
 })
-export class RemoteComponent implements OnInit {
+export class ControlsComponent implements OnInit {
   constructor(private remote: RemoteService, private media: MediaService) {}
 
   state = this.remote.state;

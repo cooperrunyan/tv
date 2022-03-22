@@ -7,10 +7,10 @@ import { ScanLinesComponent } from './filters/scan-lines/scan-lines.component';
 import { ScreenComponent } from './screen/screen.component';
 import { PanelComponent } from './panel/panel.component';
 import { DisplayComponent } from './panel/display/display.component';
-import { RemoteComponent } from './panel/remote/remote.component';
+import { ControlsComponent } from './panel/controls/controls.component';
 
 @NgModule({
-  declarations: [AppComponent, BorderComponent, ScanLinesComponent, ScreenComponent, PanelComponent, DisplayComponent, RemoteComponent],
+  declarations: [AppComponent, BorderComponent, ScanLinesComponent, ScreenComponent, PanelComponent, DisplayComponent, ControlsComponent],
   imports: [BrowserModule],
   providers: [],
   bootstrap: [AppComponent],
