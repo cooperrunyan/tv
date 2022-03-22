@@ -64,19 +64,3 @@ export default [
     link: '../assets/music/brain stew.mp4',
   },
 ];
-
-/*
-redundant
-platypus
-take back
-2000 light years away
-christie road
-private ale
-at the library
-409 in your coffeemaker
-only of you
-suffocate
-desensitized
-sick of me
-bang bang
-*/
