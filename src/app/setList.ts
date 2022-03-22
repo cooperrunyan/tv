@@ -44,3 +44,31 @@ export default [
     link: '../assets/music/lounge act.mp4',
   },
 ];
+
+/*
+in bloom
+heart shaped box
+when i come around
+longview
+basket case
+geek stink breath
+babs uvula who
+brain stew
+jesus of suburbia
+hitchin a ride
+all the time
+redundant
+platypus
+take back
+king for a day
+2000 light years away
+christie road
+private ale
+at the library
+409 in your coffeemaker
+only of you
+suffocate
+desensitized
+sick of me
+bang bang
+*/

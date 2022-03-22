@@ -9,7 +9,6 @@ export class MediaControllerService {
   constructor() {}
 
   public setList = set;
-
   public current = 0;
   public updater = new Subject<typeof this.setList[number]>();
 
