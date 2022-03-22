@@ -14,6 +14,14 @@ export class ScreenComponent implements OnInit {
   public currentSong = this.media.getCurrentSong();
   public state = this.remote.state;
 
+  ngAfterViewInit() {
+    const blocker = document.querySelector('.blocker .after') as HTMLDivElement;
+    blocker.style.opacity = '0';
+    setTimeout(() => {
+      blocker.style.opacity = '';
+    }, 800);
+  }
+
   ngOnInit() {
     this.media.updater.subscribe((currentSong) => {
       this.currentSong = currentSong;
