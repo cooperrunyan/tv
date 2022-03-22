@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MediaControllerService } from '../media-controller.service';
+import { MediaService } from '../media.service';
 import { RemoteService } from '../remote.service';
 
 @Component({
@@ -8,14 +8,14 @@ import { RemoteService } from '../remote.service';
   styleUrls: ['./screen.component.scss'],
 })
 export class ScreenComponent implements OnInit {
-  constructor(private mediaController: MediaControllerService, private remote: RemoteService) {}
+  constructor(private media: MediaService, private remote: RemoteService) {}
 
-  public allSongs = this.mediaController.setList;
-  public currentSong = this.mediaController.getCurrentSong();
+  public allSongs = this.media.setList;
+  public currentSong = this.media.getCurrentSong();
   public state = this.remote.state;
 
   ngOnInit() {
-    this.mediaController.updater.subscribe((currentSong) => {
+    this.media.updater.subscribe((currentSong) => {
       this.currentSong = currentSong;
     });
 

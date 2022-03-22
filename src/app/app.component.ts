@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { MediaControllerService } from './media-controller.service';
+import { MediaService } from './media.service';
 
 @Component({
   selector: 'app-root',
@@ -7,10 +7,10 @@ import { MediaControllerService } from './media-controller.service';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  constructor(private mediaController: MediaControllerService) {}
+  constructor(private media: MediaService) {}
 
   ngOnInit() {
-    for (const song of this.mediaController.setList) {
+    for (const song of this.media.setList) {
       this.loadLink(song.link);
     }
   }

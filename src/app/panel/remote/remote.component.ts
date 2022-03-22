@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MediaControllerService } from 'src/app/media-controller.service';
+import { MediaService } from 'src/app/media.service';
 import { RemoteService } from 'src/app/remote.service';
 
 @Component({
@@ -8,7 +8,7 @@ import { RemoteService } from 'src/app/remote.service';
   styleUrls: ['./remote.component.scss'],
 })
 export class RemoteComponent implements OnInit {
-  constructor(private remote: RemoteService, private mediaController: MediaControllerService) {}
+  constructor(private remote: RemoteService, private media: MediaService) {}
 
   state = this.remote.state;
 
@@ -27,10 +27,10 @@ export class RemoteComponent implements OnInit {
   }
 
   next() {
-    if (this.remote.state.power) this.mediaController.next();
+    if (this.remote.state.power) this.media.next();
   }
 
   last() {
-    if (this.remote.state.power) this.mediaController.last();
+    if (this.remote.state.power) this.media.last();
   }
 }

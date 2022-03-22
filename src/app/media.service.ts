@@ -6,7 +6,7 @@ import set from './setList';
 @Injectable({
   providedIn: 'root',
 })
-export class MediaControllerService {
+export class MediaService {
   constructor(private storage: StorageService) {}
 
   public setList = set;

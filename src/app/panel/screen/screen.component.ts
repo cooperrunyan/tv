@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { MediaControllerService } from 'src/app/media-controller.service';
+import { MediaService } from 'src/app/media.service';
 import { RemoteService } from 'src/app/remote.service';
 
 @Component({
@@ -8,14 +8,14 @@ import { RemoteService } from 'src/app/remote.service';
   styleUrls: ['./screen.component.scss'],
 })
 export class PanelScreenComponent {
-  constructor(private mediaController: MediaControllerService, private remote: RemoteService) {}
+  constructor(private media: MediaService, private remote: RemoteService) {}
 
-  public allSongs = this.mediaController.setList;
-  public currentSong = this.mediaController.getCurrentSong();
+  public allSongs = this.media.setList;
+  public currentSong = this.media.getCurrentSong();
   current = this.remote.state;
 
   ngOnInit(): void {
-    this.mediaController.updater.subscribe((currentSong) => {
+    this.media.updater.subscribe((currentSong) => {
       this.currentSong = currentSong;
       for (const button of Array.from(document.querySelectorAll('.screen ul li button') as NodeListOf<HTMLButtonElement>)) {
         if (button.innerHTML === currentSong.name) button.focus();
