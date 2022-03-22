@@ -1,0 +1,33 @@
+.remote {
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+}
+
+.power {
+  background-color: black;
+  border: none;
+  border-radius: 100%;
+  aspect-ratio: 1;
+  width: 40px;
+  cursor: pointer;
+
+  border-top: 2px solid #dadada;
+  border-left: 2px solid #dadada;
+  border-bottom: 2px solid #a3a3a3;
+  border-right: 2px solid #a3a3a3;
+
+  &:active {
+    border-top: 2px solid #a3a3a3;
+    border-left: 2px solid #a3a3a3;
+    border-bottom: 2px solid #dadada;
+    border-right: 2px solid #dadada;
+  }
+}

@@ -1,0 +1,42 @@
+.scan {
+  opacity: 0.5;
+}
+
+.screen {
+  background: #0d0d0d;
+  border-radius: 12px;
+  position: relative;
+  height: 85%;
+  overflow: hidden;
+  overflow-y: scroll;
+  pointer-events: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+    width: 0;
+  }
+
+  ul {
+    padding: 8%;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+
+    li {
+      background: transparent;
+
+      &.selected {
+        background-color: #00ff00;
+        color: black;
+      }
+
+      button {
+        pointer-events: none;
+        color: inherit;
+        background: inherit;
+        border: none;
+        padding: none;
+      }
+    }
+  }
+}

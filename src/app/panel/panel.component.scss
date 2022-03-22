@@ -1,0 +1,46 @@
+.panel {
+  position: absolute;
+  top: 5.7%;
+  right: 4.3%;
+  height: 83.4%;
+  width: 19.15%;
+  background-color: #a8adb0;
+  border-radius: 12px;
+  border: 8px solid #484943;
+  padding: 1.2%;
+
+  .top {
+    height: 60%;
+  }
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 12px;
+  color: black;
+  gap: 6%;
+
+  button {
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #c4c4c4;
+    cursor: pointer;
+    border-radius: 8px;
+
+    border-top: 2px solid #dadada;
+    border-left: 2px solid #dadada;
+    border-bottom: 2px solid #a3a3a3;
+    border-right: 2px solid #a3a3a3;
+
+    &:active {
+      border-top: 2px solid #a3a3a3;
+      border-left: 2px solid #a3a3a3;
+      border-bottom: 2px solid #dadada;
+      border-right: 2px solid #dadada;
+    }
+  }
+}

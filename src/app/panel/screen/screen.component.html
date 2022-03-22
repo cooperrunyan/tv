@@ -1,0 +1,10 @@
+<div class="screen">
+  <div class="scan">
+    <app-scan-lines></app-scan-lines>
+  </div>
+  <ul>
+    <li *ngFor="let song of allSongs" [class]="currentSong === song ? 'selected' : ''">
+      <button>{{ song.name }}</button>
+    </li>
+  </ul>
+</div>
