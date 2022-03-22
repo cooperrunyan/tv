@@ -3,11 +3,11 @@ import { MediaService } from 'src/app/media.service';
 import { RemoteService } from 'src/app/remote.service';
 
 @Component({
-  selector: 'app-panel-screen',
-  templateUrl: './screen.component.html',
-  styleUrls: ['./screen.component.scss'],
+  selector: 'app-display',
+  templateUrl: './display.component.html',
+  styleUrls: ['./display.component.scss'],
 })
-export class PanelScreenComponent {
+export class DisplayComponent {
   constructor(private media: MediaService, private remote: RemoteService) {}
 
   public allSongs = this.media.setList;
