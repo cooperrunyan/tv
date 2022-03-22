@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Subject } from 'rxjs';
 import { StorageService } from './storage.service';
-import set from './setList';
+import songs from './songs';
 
 @Injectable({
   providedIn: 'root',
@@ -9,7 +9,7 @@ import set from './setList';
 export class MediaService {
   constructor(private storage: StorageService) {}
 
-  public setList = set;
+  public setList = songs;
   public current = this.storage.get('media').current;
   public updater = new Subject<typeof this.setList[number]>();
 
