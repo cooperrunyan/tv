@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { RemoteService } from '../remote.service';
+import { RemoteService } from '../../remote.service';
 
 @Component({
   selector: 'app-scan-lines',
