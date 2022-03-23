@@ -1,6 +1,6 @@
 <div class="screen">
   <app-scan-lines>
-    <video class="video" autoplay loop controlslist="nodownload" [src]="currentSong.link"></video>
+    <video class="video" autoplay controlslist="nodownload" [src]="currentSong.link"></video>
   </app-scan-lines>
   <div class="filter"></div>
   <div [class]="'blocker ' + (!this.state.power ? 'off' : '')">
