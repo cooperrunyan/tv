@@ -5,12 +5,16 @@
 
 .screen {
   background: #0d0d0d;
-  border-radius: 12px;
+  border-radius: 1.44vh;
   position: relative;
   height: 85%;
   overflow: hidden;
   overflow-y: scroll;
   pointer-events: none;
+
+  * {
+    font-size: 1.65vh;
+  }
 
   &.off {
     .scan,

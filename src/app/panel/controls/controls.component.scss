@@ -8,7 +8,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 8px;
+    gap: 0.96vh;
   }
 }
 
@@ -17,23 +17,35 @@ button {
   border: none;
   border-radius: 100%;
   aspect-ratio: 1;
-  width: 40px;
+  width: 4.8vh;
   cursor: pointer;
 
-  border-top: 2px solid #dadada;
-  border-left: 2px solid #dadada;
-  border-bottom: 2px solid #a3a3a3;
-  border-right: 2px solid #a3a3a3;
+  border-top: 0.24vh solid #dadada;
+  border-left: 0.24vh solid #dadada;
+  border-bottom: 0.24vh solid #a3a3a3;
+  border-right: 0.24vh solid #a3a3a3;
 
   &:active {
-    border-top: 2px solid #a3a3a3;
-    border-left: 2px solid #a3a3a3;
-    border-bottom: 2px solid #dadada;
-    border-right: 2px solid #dadada;
+    border-top: 0.24vh solid #a3a3a3;
+    border-left: 0.24vh solid #a3a3a3;
+    border-bottom: 0.24vh solid #dadada;
+    border-right: 0.24vh solid #dadada;
   }
 }
 
 .power {
   background-color: rgb(207, 0, 0);
   color: black;
+
+  svg {
+    width: 2.4vh;
+  }
+}
+
+.next,
+.last,
+.pause {
+  svg {
+    height: 1.2vh;
+  }
 }
