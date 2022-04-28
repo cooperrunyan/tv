@@ -36,6 +36,10 @@
 
     li {
       background: transparent;
+      width: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
 
       &.selected {
         background-color: #00ff00;
@@ -47,7 +51,12 @@
         color: inherit;
         background: inherit;
         border: none;
-        padding: none;
+        padding: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 100%;
+        display: flex;
       }
     }
   }

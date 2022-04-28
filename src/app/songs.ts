@@ -32,8 +32,6 @@ export default hydrateLinks([
   { name: '409 In Your Coffeemaker' },
   { name: 'Private Ale' },
   { name: 'Going To Pasalacqua' },
-  { name: 'Pennyroyal Tea' },
-  { name: 'My Hero' },
 ]);
 
 function hydrateLinks(links: { name: string; link?: string }[]) {
