@@ -10,7 +10,7 @@ export class RemoteService {
 
   state = {
     power: false,
-    pause: true,
+    pause: false,
   };
 
   updater = new Subject<typeof this.state>();

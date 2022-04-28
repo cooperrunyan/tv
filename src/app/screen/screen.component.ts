@@ -15,7 +15,7 @@ export class ScreenComponent implements OnInit {
   public state = this.remote.state;
 
   onEnd() {
-    console.log('end');
+    this.media.next();
   }
 
   ngAfterViewInit() {
@@ -36,11 +36,11 @@ export class ScreenComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.media.updater.subscribe((currentSong) => {
+    this.media.updater.subscribe(currentSong => {
       this.currentSong = currentSong;
     });
 
-    this.remote.updater.subscribe((state) => {
+    this.remote.updater.subscribe(state => {
       const video = document.querySelector('.video') as HTMLVideoElement;
 
       if (!state.power) video.pause();
