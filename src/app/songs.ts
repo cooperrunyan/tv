@@ -3,7 +3,6 @@ export default hydrateLinks([
   { name: 'Drain You' },
   { name: 'Come As You Are' },
   { name: 'Sliver' },
-  { name: 'About A Girl' },
   { name: "Tourette's" },
   { name: 'Polly' },
   { name: 'Lithium' },
